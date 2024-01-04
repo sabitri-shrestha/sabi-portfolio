@@ -104,7 +104,7 @@ export default defineComponent({
         { id: 1, title: 'Laravel Ambassador', githubLink: 'https://github.com/sabitri-shrestha/laravel-ambassador', languages: ['Laravel', 'Vue'] },
         { id: 2, title: 'Vue Admin', text: 'Project 4', githubLink: 'https://github.com/sabitri-shrestha/vue-admin',languages: ['Vue'] },
         { id: 3, title: 'Landon App', githubLink: 'https://github.com/sabitri-shrestha/landon_app' ,languages: ['React']},
-        { id: 4, title: 'Simple Social', githubLink: 'https://github.com/sabitri-shrestha/bucketlist' ,languages: ['Python'] },
+        { id: 4, title: 'Simple Social', githubLink: 'https://github.com/sabitri-shrestha/simplesocial' ,languages: ['Python'] },
 
       ],
     }
