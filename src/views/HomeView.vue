@@ -9,7 +9,7 @@
               <h1 class="text-grey">Hi</h1>
               <h1 class="text-white">I'm Sabitri Shrestha</h1>
               <span class="text-grey">Web Developer</span><br/>
-              <v-btn tile dark class="text-yellow mt-8" variant="outlined">Contact Me</v-btn>
+              <v-btn tile dark class="text-yellow mt-8" variant="outlined" @click="scrollToContact">Contact Me</v-btn>
             </div>
           </v-col>
           <v-col cols="2">
@@ -26,7 +26,7 @@
       <v-col cols="12" class="mt-10" id="about">
         <h2 class="mt-10 text-white">About Me</h2>
         <p class="text-grey mt-10" style="font-size:20px;">
-          I am a positive and passionate person living in Australia. In my professional life, I find problems as an opportunity to learn something new. Over the years, I've built products for businesses and companies ranging from plugins to complex solutions with focus on best user experience.
+          I am a positive and passionate person living in Melbourne, Australia. In my professional life, I find problems as an opportunity to learn something new. Over the years, I've built products for businesses and companies ranging from plugins to complex solutions with focus on best user experience.
           The joy of creating keeps me motivated in my work. I am eager to learn new technologies and I value collaboration, quality and innovation in my work. I love spending time with my plants, music and my family.
         </p>
       </v-col>
@@ -111,9 +111,15 @@ export default defineComponent({
   },
   methods: {
     openLink(link: string) {
-      // Open GitHub link in a new tab/window
       window.open(link, '_blank');
-    }
+    },
+    scrollToContact() {
+      const contactSection = document.getElementById('contact');
+
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    },
   },
   components: {
     NavBar,
